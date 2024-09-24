@@ -103,7 +103,7 @@ ipython_config.py
 
 # pdm
 #   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
+pdm.lock
 #   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
 #   in version control.
 #   https://pdm-project.org/#use-with-ide
@@ -153,6 +153,8 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+volume/cache/
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
