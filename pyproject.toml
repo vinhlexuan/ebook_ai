@@ -8,6 +8,15 @@ authors = [
 dependencies = [
     "alembic>=1.13.3",
     "psycopg2-binary>=2.9.9",
+    "fastapi[standard]>=0.115.0",
+    "bcrypt>=4.2.0",
+    "python-jose>=3.3.0",
+    "openai>=1.50.2",
+    "python-dotenv>=1.0.1",
+    "EbookLib>=0.18",
+    "beautifulsoup4>=4.12.3",
+    "pandas>=2.2.3",
+    "openpyxl>=3.1.5",
 ]
 requires-python = "==3.9.*"
 readme = "README.md"

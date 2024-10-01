@@ -20,14 +20,14 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     op.create_table(
-        'users',
+        'user',
         sa.Column('id', sa.Integer, primary_key=True),
         sa.Column('email', sa.String(120), unique=True, nullable=False),
         sa.Column('password', sa.String(60), nullable=False),
-        sa.Column('role_id', sa.Integer, sa.ForeignKey('roles.id'), nullable=False),
+        sa.Column('role_id', sa.Integer, sa.ForeignKey('role.id'), nullable=False),
         sa.Column('created_at', sa.DateTime, server_default=sa.func.now()),
         sa.Column('updated_at', sa.DateTime, server_default=sa.func.now(), onupdate=sa.func.now())
     )
 
 def downgrade() -> None:
-    op.drop_table('users')
+    op.drop_table('user')
